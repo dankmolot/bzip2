@@ -18,10 +18,10 @@ SHELL=/bin/sh
 CC=gcc
 AR=ar
 RANLIB=ranlib
-LDFLAGS=$(LDFLAGS)
+LDFLAGS=
 
 BIGFILES=-D_FILE_OFFSET_BITS=64
-CFLAGS=$(CFLAGS) -Wall -Winline -O2 -g $(BIGFILES)
+CFLAGS=-Wall -Winline -fPIC -O2 -g $(BIGFILES)
 
 # Where you want it installed when you do 'make install'
 PREFIX=/usr/local
